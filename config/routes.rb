@@ -1,4 +1,4 @@
-Rails::Application.routes.draw do |map|
+Rails::Application.routes.draw do
   resources :rails_metrics, :only => [:index, :show, :destroy] do
     get :all, :on => :collection
     get :chart, :on => :member
